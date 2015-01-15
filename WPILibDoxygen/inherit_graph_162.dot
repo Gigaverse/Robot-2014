@@ -1,8 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  bgcolor="transparent";
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="JPEG2000FileAdvancedOptions\l_struct",height=0.2,width=0.4,color="black",URL="$struct_j_p_e_g2000_file_advanced_options__struct.html"];
-}
