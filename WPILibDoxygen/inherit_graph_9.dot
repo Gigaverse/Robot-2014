@@ -1,0 +1,20 @@
+digraph "Graphical Class Hierarchy"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="exception",height=0.2,width=0.4,color="grey75"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="BadMessageException",height=0.2,width=0.4,color="black",URL="$class_bad_message_exception.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="IllegalStateException",height=0.2,width=0.4,color="black",URL="$class_illegal_state_exception.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="IOException",height=0.2,width=0.4,color="black",URL="$class_i_o_exception.html"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="EOFException",height=0.2,width=0.4,color="black",URL="$class_e_o_f_exception.html"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="TableKeyExistsWithDifferent\lTypeException",height=0.2,width=0.4,color="black",URL="$class_table_key_exists_with_different_type_exception.html"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node7 [label="TableKeyNotDefinedException",height=0.2,width=0.4,color="black",URL="$class_table_key_not_defined_exception.html"];
+}

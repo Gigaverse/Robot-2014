@@ -1,0 +1,13 @@
+digraph "ContourFitLineReport_struct"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="ContourFitLineReport\l_struct",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" lineEquation" ,fontname="FreeSans"];
+  Node2 [label="LineEquation_struct",height=0.2,width=0.4,color="black",URL="$struct_line_equation__struct.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" lineSegment" ,fontname="FreeSans"];
+  Node3 [label="LineFloat_struct",height=0.2,width=0.4,color="black",URL="$struct_line_float__struct.html"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" end\nstart" ,fontname="FreeSans"];
+  Node4 [label="PointFloat_struct",height=0.2,width=0.4,color="black",URL="$struct_point_float__struct.html"];
+}

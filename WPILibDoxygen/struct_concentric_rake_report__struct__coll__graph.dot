@@ -1,0 +1,16 @@
+digraph "ConcentricRakeReport_struct"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="ConcentricRakeReport\l_struct",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" firstEdges\nlastEdges" ,fontname="FreeSans"];
+  Node2 [label="PointFloat_struct",height=0.2,width=0.4,color="black",URL="$struct_point_float__struct.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" rakeArcs" ,fontname="FreeSans"];
+  Node3 [label="ArcInfo_struct",height=0.2,width=0.4,color="black",URL="$struct_arc_info__struct.html"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" boundingBox" ,fontname="FreeSans"];
+  Node4 [label="Rect_struct",height=0.2,width=0.4,color="black",URL="$struct_rect__struct.html"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" allEdges" ,fontname="FreeSans"];
+  Node5 [label="EdgeLocationReport\l_struct",height=0.2,width=0.4,color="black",URL="$struct_edge_location_report__struct.html"];
+  Node2 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" edges" ,fontname="FreeSans"];
+}
