@@ -1,0 +1,17 @@
+digraph "IncomingEntryReceiver"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="IncomingEntryReceiver",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="AbstractNetworkTableEntry\lStore",height=0.2,width=0.4,color="black",URL="$class_abstract_network_table_entry_store.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="ClientNetworkTableEntryStore",height=0.2,width=0.4,color="black",URL="$class_client_network_table_entry_store.html"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="ServerNetworkTableEntryStore",height=0.2,width=0.4,color="black",URL="$class_server_network_table_entry_store.html"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="ClientConnectionAdapter",height=0.2,width=0.4,color="black",URL="$class_client_connection_adapter.html"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="ServerConnectionAdapter",height=0.2,width=0.4,color="black",URL="$class_server_connection_adapter.html"];
+}

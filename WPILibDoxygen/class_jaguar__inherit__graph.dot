@@ -1,0 +1,27 @@
+digraph "Jaguar"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="Jaguar",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="SafePWM",height=0.2,width=0.4,color="black",URL="$class_safe_p_w_m.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="PWM",height=0.2,width=0.4,color="black",URL="$class_p_w_m.html"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="SensorBase",height=0.2,width=0.4,color="black",URL="$class_sensor_base.html"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="ErrorBase",height=0.2,width=0.4,color="black",URL="$class_error_base.html"];
+  Node6 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="ITableListener",height=0.2,width=0.4,color="black",URL="$class_i_table_listener.html"];
+  Node7 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node7 [label="LiveWindowSendable",height=0.2,width=0.4,color="black",URL="$class_live_window_sendable.html"];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node8 [label="Sendable",height=0.2,width=0.4,color="black",URL="$class_sendable.html"];
+  Node9 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node9 [label="MotorSafety",height=0.2,width=0.4,color="black",URL="$class_motor_safety.html"];
+  Node10 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node10 [label="SpeedController",height=0.2,width=0.4,color="black",URL="$class_speed_controller.html"];
+  Node11 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node11 [label="PIDOutput",height=0.2,width=0.4,color="black",URL="$class_p_i_d_output.html"];
+}
